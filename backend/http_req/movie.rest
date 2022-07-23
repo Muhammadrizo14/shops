@@ -1,0 +1,34 @@
+
+####  Get all Movies
+GET http://localhost:3000/movie/
+
+
+####  Get Movies by Id
+GET http://localhost:3000/movie/4
+
+####  Creating Movies
+POST http://localhost:3000/movie
+Content-Type: application/json
+
+{
+  "title": "Тор: Любовь и гром (2022)",
+  "img": "thor.jpg",
+  "description": "Джейн Фостер берет на себя обязанности Бога-громовержца и становится обладательницей молота Мьёльнира.",
+  "dateofpremiere": "23 июня 2022,",
+  "slogan": "«Not every god has a plan»",
+  "rejissor": "Тайка Вайтити",
+  "genreId": 1
+}
+
+####  UPDATE Movies
+PATCH http://localhost:3000/movie/4
+Content-Type: application/json
+
+
+{
+  "title": "Horretewrtweor"
+}
+
+
+####  Delete
+DELETE http://localhost:3000/movie/1

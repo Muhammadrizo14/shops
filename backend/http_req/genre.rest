@@ -1,0 +1,28 @@
+
+####  Get all Genres
+GET http://localhost:3000/genre/
+
+
+####  Get Genres by Id
+GET http://localhost:3000/genre/4
+
+####  Creating Genres
+POST http://localhost:3000/genre
+Content-Type: application/json
+
+{
+  "title": "Drama"
+}
+
+####  UPDATE Genres
+PATCH http://localhost:3000/genre/4
+Content-Type: application/json
+
+
+{
+  "title": "Horretewrtweor"
+}
+
+
+####  Delete
+DELETE http://localhost:3000/genre/4

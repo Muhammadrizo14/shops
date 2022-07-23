@@ -10,3 +10,29 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
+model Category {
+  id    Int @id @default(autoincrement())
+  title String
+}
+
+
+model Movie {
+  id              Int @id @default(autoincrement())
+  title           String 
+  description     String
+  img             String
+  dateofpremiere  String
+  slogan          String
+  rejissor        String
+  genreId         Int
+  genre           Genre @relation(fields: [genreId], references: [id])
+}
+
+
+model Genre {
+  id      Int @id @default(autoincrement())
+  title   String
+  movie   Movie[]
+}
+

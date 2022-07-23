@@ -1,1 +1,4 @@
-export class Category {}
+export class CategoryEntity  {
+    id: number;
+    title: string
+}
